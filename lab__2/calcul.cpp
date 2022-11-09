@@ -139,3 +139,39 @@ int math() {
     std::cout<<"Result:"<<stack_operand.top().number<<std::endl;
     return 0;
 }
+
+int opz() {
+    char simv;
+    char oper;
+    double number;
+    std::cout<<"Enter the expression"<<std::endl;
+    std::stack <double> stack_operand;
+    while (true){
+        simv=std::cin.peek();
+        if (simv=='\n')
+            break;
+        if (simv==' '){
+            std::cin.ignore();
+            continue;
+        }
+        if (simv>='0' & simv<='9'){
+            std::cin>>number;
+            stack_operand.push(number);
+        }
+        if (simv=='+' || simv=='-' || simv=='/' || simv=='*'){
+            std::cin >> oper;
+            double a,b,c;
+            switch (oper){
+                case '+':
+                    a=stack_operand.top();
+                    stack_operand.pop();
+                    b=stack_operand.top();
+                    stack_operand.pop();
+                    c=a + b;
+                    stack_operand.push(c);
+                    break;
+            }
+        }
+    }
+    return 0;
+}
