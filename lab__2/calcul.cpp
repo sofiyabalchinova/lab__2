@@ -128,6 +128,10 @@ int math() {
         std::cin.ignore();
         continue;
         }
+    else {
+        std::cout<<"Value entered incorrectly"<<std::endl;
+        return 0;
+        }
     }
     while (stack_operation.size()!=0){
         if (calculate(stack_operand,stack_operation,element)==false){
@@ -144,7 +148,7 @@ int opz() {
     char simv;
     char oper;
     double number;
-    std::cout<<"Enter the expression"<<std::endl;
+    std::cout<<"Enter the expression:"<<std::endl;
     std::stack <double> stack_operand;
     while (true){
         simv=std::cin.peek();
@@ -170,8 +174,43 @@ int opz() {
                     c=a + b;
                     stack_operand.push(c);
                     break;
+                case '-':
+                    a=stack_operand.top();
+                    stack_operand.pop();
+                    b=stack_operand.top();
+                    stack_operand.pop();
+                    c= b - a;
+                    stack_operand.push(c);
+                    break;
+                case '*':
+                    a=stack_operand.top();
+                    stack_operand.pop();
+                    b=stack_operand.top();
+                    stack_operand.pop();
+                    c=a * b;
+                    stack_operand.push(c);
+                    break;
+                case '/':
+                    a = stack_operand.top();
+                    stack_operand.pop();
+                    b=stack_operand.top();
+                    stack_operand.pop();
+                    c = b / a;
+                    stack_operand.push(c);
+                    if (a == 0){
+                        std::cerr<<"Error"<<std::endl;
+                        return 0;
+                    }
+                    break;
+                default:
+                    std::cerr<<"Error"<<std::endl;
+                    return 0;
+                    break;
             }
+            
+            continue;
         }
     }
+    std::cout<<"Result:"<<stack_operand.top()<<std::endl;
     return 0;
 }

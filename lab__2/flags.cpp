@@ -25,7 +25,7 @@ int main(int argc, char **argv){
     if(forward)
         math();
     else
-        std::cerr<<"Error";
+        opz();
     return EXIT_SUCCESS;
 
 }
