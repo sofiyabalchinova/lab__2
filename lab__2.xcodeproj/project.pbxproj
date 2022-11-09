@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F8E1CB46291C0155003D7677 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8E1CB45291C0155003D7677 /* main.cpp */; };
+		F8E1CB46291C0155003D7677 /* calcul.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8E1CB45291C0155003D7677 /* calcul.cpp */; };
+		F8E1CB4F291C01C1003D7677 /* flags.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8E1CB4D291C01C1003D7677 /* flags.cpp */; };
+		F8E1CB51291C021B003D7677 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = F8E1CB50291C021B003D7677 /* Makefile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,10 @@
 
 /* Begin PBXFileReference section */
 		F8E1CB42291C0155003D7677 /* lab__2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab__2; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8E1CB45291C0155003D7677 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F8E1CB45291C0155003D7677 /* calcul.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = calcul.cpp; sourceTree = "<group>"; };
+		F8E1CB4C291C01A2003D7677 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		F8E1CB4D291C01C1003D7677 /* flags.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = flags.cpp; sourceTree = "<group>"; };
+		F8E1CB50291C021B003D7677 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +62,10 @@
 		F8E1CB44291C0155003D7677 /* lab__2 */ = {
 			isa = PBXGroup;
 			children = (
-				F8E1CB45291C0155003D7677 /* main.cpp */,
+				F8E1CB45291C0155003D7677 /* calcul.cpp */,
+				F8E1CB4C291C01A2003D7677 /* Header.h */,
+				F8E1CB4D291C01C1003D7677 /* flags.cpp */,
+				F8E1CB50291C021B003D7677 /* Makefile */,
 			);
 			path = lab__2;
 			sourceTree = "<group>";
@@ -119,7 +127,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8E1CB46291C0155003D7677 /* main.cpp in Sources */,
+				F8E1CB51291C021B003D7677 /* Makefile in Sources */,
+				F8E1CB46291C0155003D7677 /* calcul.cpp in Sources */,
+				F8E1CB4F291C01C1003D7677 /* flags.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
