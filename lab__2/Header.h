@@ -1,2 +1,2 @@
 int math();
-
+int opz();
