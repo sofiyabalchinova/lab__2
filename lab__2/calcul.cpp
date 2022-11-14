@@ -209,10 +209,7 @@ int opz() {
             }
             continue;
         }
-        else {
-            std::cout<< "Value entered incorrectly"<<std::endl;
-            return 0;
-        }
+
     }
     std::cout<<"Result:"<<stack_operand.top()<<std::endl;
     return 0;
